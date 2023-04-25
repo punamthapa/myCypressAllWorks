@@ -1,0 +1,10 @@
+export const SYSTEM_DATE_FORMATS = {
+    "MM-DD-YYYY": "MM-DD-YYYY (12-22-2020)",
+    "DD-MM-YYYY": "DD-MM-YYYY (01-12-2020)",
+    "YYYY-MM-DD": "YYYY-MM-DD (2012-12-22)",
+    "DD-MM-YYYY": "DD-MM-YYYY (22-Dec-2020)",
+    "DD MMM, YYYY": "DD MMM, YYYY (22 Dec, 2020)",
+    "YYYY/MM/DD": "YYYY/MM/DD (2012/12/22)",
+    "DD/MM/YYYY": "DD/MM/YYYY (01/12/2020)",
+    "MM/DD/YYYY": "MM/DD/YYYY (04/22/2020)",
+};
