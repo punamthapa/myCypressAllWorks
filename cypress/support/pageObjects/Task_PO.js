@@ -76,10 +76,11 @@ class Task_PO {
     }
 
     typeDescription(description) {
-        cy.get("div[name='description']")
-            .find("textarea")
+        cy.get("div[name='description'] > textarea")
             .type(description)
             .wait(2000);
+
+        return this;
     }
 
     clickChoosePriority() {
@@ -357,6 +358,18 @@ class Task_PO {
                     );
                 });
         });
+
+        return this;
+    }
+
+    checkTheBox() {
+        cy.get(".ag-icon-checkbox").click();
+
+        return this;
+    }
+
+    verifyTaskStatus(status) {
+        cy.get(".text-capitalize").should("contain", status);
 
         return this;
     }
